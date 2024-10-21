@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2.0</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .contenedor-flexible{
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh; 
+            align-content: flex-start;
+        }
+
+        .contenedor-flexible-2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .elemento-flexible{
+            color: white;
+            font-size: 5rem;
+        }
+
+        .uno, .seis{
+            background-color: red;
+            /* width: 250px; */
+            flex-basis: 50vh;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 100%;
+            background-image: url(img/hamburguesa.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(1.5);
+
+        }
+        .dos, .siete{
+            background-color: orange;
+            /* width: 250px; */
+            flex-basis: 50vh;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 50vh;
+            background-image: url(img/coca.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .tres, .ocho{
+            background-color: blue;
+            /* width: 250px; */
+            flex-basis: 50vh;
+            flex-grow: 100vw; 
+            flex-shrink: 1;
+            height: 50vh;
+            background-image: url(img/papitas.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cuatro{
+            background-color: green;
+            /* width: 250px; */
+            flex-basis: 350px;
+            height: 350px;
+        }
+        .cinco{
+            background-color: violet;
+            /* width: 250px; */
+            flex-basis: 350px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">Di
+            <div class="opaco"></div>
+        </div>
+        <div class="contenedor-flexible-2">
+        <div class="elemento-flexible dos">No</div>
+        <div class="elemento-flexible tres"> ANDRE</div>
+    </div>
+
+        <!-- <div class="elemento-flexible cuatro">4</div>
+        <div class="elemento-flexible cinco">5</div>
+        <div class="elemento-flexible seis">6</div>
+        <div class="elemento-flexible siete">7</div>
+        <div class="elemento-flexible ocho">8</div> -->
+    </div>
+    <img src="hamburguesa.jpeg" alt="una sabrosa hamburguesa">    
+</body>
+</html>
